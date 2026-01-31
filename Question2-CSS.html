@@ -3,28 +3,41 @@
 <head>
    <title>Question 2 - CSS</title>
    <style>
-    .mainsection a {
-      text-decoration: none;
-      color: #414040;
-      outline: none;
+     a {
+      text-decoration: underline;
+      color: #0c6938;
+      outline: 2px solid transparent; /* Invisible but present for screen readers */
+    }
+    a:focus {
+      background-color: yellow;
+      color: black;
+      outline: 3px solid #0c6938;
+      outline-offset: 2px;
+    }
+    
+    .category-desc {
+      display: none; /* Hidden visually but available to screen readers */
     }
 
     
     </style>
 </head>
 <body>
-<div class="mainsection">
-<h1><img src="lab2/lab2-imageoftext.gif" alt="Shopping categories"></h1>
+<main>
+<h1><img src="lab2/lab2-imageoftext.gif" alt="Shopping categories"></span></h1>
 
+<!-- Shopping categories navigation -->
+<nav>
 <ul>
-  <li><a href="#">Animals</a></li>
-  <li><a href="#">Computers</a></li>
-  <li><a href="#">Diversity and inclusion</a></li>
-  <li><a href="#">Food</a></li>
-  <li><a href="#">Medicine</a></li>
-  <li><a href="#">Music</a></li>
+  <li><a href="lab2/lab2-imageoftext.gif">Animals</a></li>
+  <li><a href="lab2/lab2-imageoftext.gif">Computers </a></li>
+  <li><a href="lab2/lab2-imageoftext.gif">Diversity and inclusion</a></li>
+  <li><a href="lab2/lab2-imageoftext.gif">Food </a></li>
+  <li><a href="lab2/lab2-imageoftext.gif">Medicine </a></li>
+  <li><a href="lab2/lab2-imageoftext.gif">Music</a></li>
 </ul>
-</div>    
+</nav>
+</main>    
 
 </body>
 </html>
